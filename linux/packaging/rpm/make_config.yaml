@@ -7,7 +7,7 @@ license: Other
 priority: optional
 section: x11
 essential: false
-url: https://clashmi.app
+url: https://github.com/KaringX/substoreAssistant
 icon: assets/images/app_icon_256.png
 
 keywords:
