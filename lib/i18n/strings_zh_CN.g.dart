@@ -116,7 +116,6 @@ class _TranslationsMetaZhCn implements TranslationsMetaEn {
 	@override String get launchAtStartup => '开机启动';
 	@override String get autoConnectAfterLaunch => '启动后自动连接';
 	@override String get hideAfterLaunch => '启动后隐藏窗口';
-	@override String get website => '官网';
 	@override String get termOfUse => '使用条款';
 	@override String get privacyPolicy => '隐私政策';
 	@override String get log => '日志';
@@ -204,7 +203,6 @@ extension on TranslationsZhCn {
 			'meta.launchAtStartup' => '开机启动',
 			'meta.autoConnectAfterLaunch' => '启动后自动连接',
 			'meta.hideAfterLaunch' => '启动后隐藏窗口',
-			'meta.website' => '官网',
 			'meta.termOfUse' => '使用条款',
 			'meta.privacyPolicy' => '隐私政策',
 			'meta.log' => '日志',

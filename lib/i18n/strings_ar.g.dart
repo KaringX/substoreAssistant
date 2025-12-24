@@ -116,7 +116,6 @@ class _TranslationsMetaAr implements TranslationsMetaEn {
 	@override String get launchAtStartup => 'إطلاق عند بدء التشغيل';
 	@override String get autoConnectAfterLaunch => 'اتصال السيارات بعد الإطلاق';
 	@override String get hideAfterLaunch => 'إخفاء النافذة بعد بدء التشغيل';
-	@override String get website => 'موقع إلكتروني';
 	@override String get termOfUse => 'شرط الخدمة';
 	@override String get privacyPolicy => 'سياسة الخصوصية';
 	@override String get log => 'سجل';
@@ -204,7 +203,6 @@ extension on TranslationsAr {
 			'meta.launchAtStartup' => 'إطلاق عند بدء التشغيل',
 			'meta.autoConnectAfterLaunch' => 'اتصال السيارات بعد الإطلاق',
 			'meta.hideAfterLaunch' => 'إخفاء النافذة بعد بدء التشغيل',
-			'meta.website' => 'موقع إلكتروني',
 			'meta.termOfUse' => 'شرط الخدمة',
 			'meta.privacyPolicy' => 'سياسة الخصوصية',
 			'meta.log' => 'سجل',
