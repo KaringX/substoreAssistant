@@ -93,9 +93,7 @@
 		B5EC3A85ADBD29579C7DF776 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CC8F12E5EE72500EA3770 /* libswift_Concurrency.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswift_Concurrency.dylib; path = ../bind/apple/libswift_Concurrency.dylib; sourceTree = "<group>"; };
 		CE3CC8F22E5EE72500EA3770 /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = ../bind/apple/libswiftCore.dylib; sourceTree = "<group>"; };
-		CEBE65DB2A22EAE0004691A4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		CEEC1A232B1436050076CA70 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
-		CEFF66B12AF0A49700242498 /* Libclash.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Libclash.xcframework; path = ../bind/apple/Libclash.xcframework; sourceTree = "<group>"; };
 		D927A507EB5B1E920D18EEC3 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,9 +189,7 @@
 				CE3CC8F12E5EE72500EA3770 /* libswift_Concurrency.dylib */,
 				CE3CC8F22E5EE72500EA3770 /* libswiftCore.dylib */,
 				CEEC1A232B1436050076CA70 /* libresolv.tbd */,
-				CEFF66B12AF0A49700242498 /* Libclash.xcframework */,
 				B5EC3A85ADBD29579C7DF776 /* Pods_Runner.framework */,
-				CEBE65DB2A22EAE0004691A4 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -629,7 +625,7 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Clash Mi";
+				INFOPLIST_KEY_CFBundleDisplayName = "Substore Assistant";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
