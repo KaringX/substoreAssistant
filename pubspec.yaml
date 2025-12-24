@@ -1,0 +1,83 @@
+name: substore_assistant
+description: substoreAssistant
+
+publish_to: none 
+version: 1.0.0+1
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  cupertino_icons: 1.0.8
+  package_info_plus: 8.3.1
+  ffi: 2.1.4
+  url_launcher: 6.3.2
+  path_provider: 2.1.5
+  flutter_secure_storage: 9.2.4
+  protocol_handler: 0.1.6 #0.2.0 cause windows jam when exit
+  json_annotation: 4.9.0
+  launch_at_startup: 0.2.2 #pc only 0.2.2 - 0.3.1 StartupApproved cause reg exceptions
+  provider: 6.1.5+1
+  contextmenu: 3.0.0
+  uuid: 4.5.2 #flutter_test 
+  slang: 4.11.0
+  slang_flutter: 4.11.0
+  punycode_converter: 0.2.1
+  scrollview_observer: 1.26.2
+  after_layout: 1.2.0
+  windows_single_instance: 1.1.0 #windows only
+  file_picker: 10.3.7 
+  tray_manager: 0.5.2 # pc only
+  hotkey_manager: 0.2.3  # pc only
+  logger: 2.6.2
+  tuple: 2.0.2
+  open_dir: 0.0.2+1 #pc only
+  path: 1.9.1 #flutter_test
+  characters: 1.4.0 #flutter_test
+  win32_registry: 1.1.5 #flutter_test
+  open_file: 3.5.10
+  window_manager: #0.5.0 #pc only
+    #path: ../window_manager/packages/
+    git:
+      url: https://github.com/KaringX/window_manager.git
+      ref: bf21977eaa4e6035b1d81e249f91525a74f86ffd
+      path: packages/window_manager
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 5.0.0
+  build_runner: 2.4.13
+  json_serializable: 6.8.0 #dart run build_runner build --delete-conflicting-outputs
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/datas/
+    - assets/datas/sub-store-backend/
+    - assets/datas/sub-store-frontend/
+    - assets/datas/scripts/scripts.zip
+
+
+#https://www.appicon.co/
+flutter_launcher_icons: #flutter pub run flutter_launcher_icons
+  image_path: logo-round.png 
+  min_sdk_android: 21 
+  windows:
+    generate: false 
+    image_path: logo-round.png
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: logo-round-macos.png
+ 

@@ -1,0 +1,21 @@
+display_name: Substore Assistant
+summary: Substore Assistant
+group: Applications/Internet
+vendor: KaringX
+packager: KaringX
+license: Other
+priority: optional
+section: x11
+essential: false
+url: https://clashmi.app
+icon: assets/images/app_icon_256.png
+
+keywords:
+  - Substore Assistant
+
+generic_name: Substore Assistant
+
+categories:
+  - Applications/Internet
+
+startup_notify: true

@@ -1,0 +1,14 @@
+display_name: Substore Assistant
+package_name: substoreAssistant
+maintainer:
+  name: KaringX
+
+icon: assets/images/app_icon_256.png
+
+keywords:
+  - Substore Assistant
+
+generic_name: Substore Assistant
+
+categories:
+  - Network
