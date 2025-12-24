@@ -53,3 +53,5 @@ app.*.map.json
 /private
 *.hprof
 
+/bind/linux/core/substoreAssistantService
+/bind/windows/core/substoreAssistantService.exe
