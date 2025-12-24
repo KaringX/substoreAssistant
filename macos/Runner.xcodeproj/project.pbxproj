@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -27,20 +27,6 @@
 		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
-		CE3CC8F32E5EE72500EA3770 /* libswift_Concurrency.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3CC8F12E5EE72500EA3770 /* libswift_Concurrency.dylib */; };
-		CE3CC8F42E5EE72500EA3770 /* libswiftCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3CC8F22E5EE72500EA3770 /* libswiftCore.dylib */; };
-		CE3CC8F52E5EE72C00EA3770 /* libswift_Concurrency.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE3CC8F12E5EE72500EA3770 /* libswift_Concurrency.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CE3CC8F62E5EE72E00EA3770 /* libswiftCore.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE3CC8F22E5EE72500EA3770 /* libswiftCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		CE6C8AC82E26585000B6ACEA /* LibVpnCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC19F82B142FA90076CA70 /* LibVpnCore.framework */; };
-		CE6C8AC92E26585000B6ACEA /* LibVpnCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC19F82B142FA90076CA70 /* LibVpnCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CECF3FC82E24E9AF0029BC7E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBE65DB2A22EAE0004691A4 /* NetworkExtension.framework */; };
-		CECF3FD22E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = CECF3FC72E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CEEC1A062B142FFC0076CA70 /* Libclash.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC1A042B142FCC0076CA70 /* Libclash.xcframework */; };
-		CEEC1A172B1430910076CA70 /* ExtensionPlatformInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1A132B1430910076CA70 /* ExtensionPlatformInterface.swift */; };
-		CEEC1A182B1430910076CA70 /* LibVpnCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1A142B1430910076CA70 /* LibVpnCore.swift */; };
-		CEEC1A192B1430910076CA70 /* Extension+RunBlocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1A152B1430910076CA70 /* Extension+RunBlocking.swift */; };
-		CEEC1A1A2B1430910076CA70 /* ExtensionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1A162B1430910076CA70 /* ExtensionProvider.swift */; };
-		CEEC1A242B1436050076CA70 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC1A232B1436050076CA70 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 33CC111A2044C6BA0003C045;
 			remoteInfo = FLX;
-		};
-		CE6C8ACA2E26585000B6ACEA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEEC19F72B142FA90076CA70;
-			remoteInfo = LibVpnCore;
-		};
-		CECF3FD02E24E9AF0029BC7E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33CC10E52044A3C60003C045 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CECF3FC62E24E9AF0029BC7E;
-			remoteInfo = clashmiServiceSE;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,19 +48,6 @@
 			files = (
 			);
 			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE6C8ACC2E26585100B6ACEA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CE3CC8F52E5EE72C00EA3770 /* libswift_Concurrency.dylib in Embed Frameworks */,
-				CE3CC8F62E5EE72E00EA3770 /* libswiftCore.dylib in Embed Frameworks */,
-				CE6C8AC92E26585000B6ACEA /* LibVpnCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEBE65E52A22EAE1004691A4 /* Embed Foundation Extensions */ = {
@@ -107,7 +66,6 @@
 			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				CECF3FD22E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension in Embed System Extensions */,
 			);
 			name = "Embed System Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +75,7 @@
 /* Begin PBXFileReference section */
 		333000ED22D3DE5D00554162 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
-		33CC10ED2044A3C60003C045 /* Clash Mi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clash Mi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CC10ED2044A3C60003C045 /* Substore Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Substore Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CC10F02044A3C60003C045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33CC10F22044A3C60003C045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Runner/Assets.xcassets; sourceTree = "<group>"; };
 		33CC10F52044A3C60003C045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -135,35 +93,11 @@
 		B5EC3A85ADBD29579C7DF776 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3CC8F12E5EE72500EA3770 /* libswift_Concurrency.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswift_Concurrency.dylib; path = ../bind/apple/libswift_Concurrency.dylib; sourceTree = "<group>"; };
 		CE3CC8F22E5EE72500EA3770 /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = ../bind/apple/libswiftCore.dylib; sourceTree = "<group>"; };
-		CE8B929F2A5C07360071C495 /* clashmiService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clashmiService.entitlements; sourceTree = "<group>"; };
 		CEBE65DB2A22EAE0004691A4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		CEBE65DE2A22EAE1004691A4 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
-		CEBE65E02A22EAE1004691A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CECF3FC72E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.nebula.clashmi.clashmiServiceSE.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEC19F82B142FA90076CA70 /* LibVpnCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibVpnCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEC1A042B142FCC0076CA70 /* Libclash.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Libclash.xcframework; path = ../bind/apple/Libclash.xcframework; sourceTree = "<group>"; };
-		CEEC1A132B1430910076CA70 /* ExtensionPlatformInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionPlatformInterface.swift; sourceTree = "<group>"; };
-		CEEC1A142B1430910076CA70 /* LibVpnCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibVpnCore.swift; sourceTree = "<group>"; };
-		CEEC1A152B1430910076CA70 /* Extension+RunBlocking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+RunBlocking.swift"; sourceTree = "<group>"; };
-		CEEC1A162B1430910076CA70 /* ExtensionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionProvider.swift; sourceTree = "<group>"; };
 		CEEC1A232B1436050076CA70 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
 		CEFF66B12AF0A49700242498 /* Libclash.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Libclash.xcframework; path = ../bind/apple/Libclash.xcframework; sourceTree = "<group>"; };
 		D927A507EB5B1E920D18EEC3 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CECF3FD72E24E9AF0029BC7E /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = CECF3FC62E24E9AF0029BC7E /* clashmiServiceSE */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CECF3FC92E24E9AF0029BC7E /* clashmiServiceSE */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (CECF3FD72E24E9AF0029BC7E /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = clashmiServiceSE; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		33CC10EA2044A3C60003C045 /* Frameworks */ = {
@@ -171,26 +105,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E9609A611DDA9B43588B28 /* Pods_Runner.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECF3FC42E24E9AF0029BC7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE3CC8F32E5EE72500EA3770 /* libswift_Concurrency.dylib in Frameworks */,
-				CE3CC8F42E5EE72500EA3770 /* libswiftCore.dylib in Frameworks */,
-				CE6C8AC82E26585000B6ACEA /* LibVpnCore.framework in Frameworks */,
-				CECF3FC82E24E9AF0029BC7E /* NetworkExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEEC19F52B142FA90076CA70 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEEC1A242B1436050076CA70 /* libresolv.tbd in Frameworks */,
-				CEEC1A062B142FFC0076CA70 /* Libclash.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,12 +125,8 @@
 		33CC10E42044A3C60003C045 = {
 			isa = PBXGroup;
 			children = (
-				CEEC1A042B142FCC0076CA70 /* Libclash.xcframework */,
 				33FAB671232836740065AC1E /* Runner */,
 				33CEB47122A05771004F2AC0 /* Flutter */,
-				CEBE65DD2A22EAE1004691A4 /* clashmiService */,
-				CEEC19F92B142FA90076CA70 /* LibVpnCore */,
-				CECF3FC92E24E9AF0029BC7E /* clashmiServiceSE */,
 				33CC10EE2044A3C60003C045 /* Products */,
 				D73912EC22F37F3D000D13A0 /* Frameworks */,
 				65F4E399FE2B6F7C2914C7F2 /* Pods */,
@@ -226,9 +136,7 @@
 		33CC10EE2044A3C60003C045 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33CC10ED2044A3C60003C045 /* Clash Mi.app */,
-				CEEC19F82B142FA90076CA70 /* LibVpnCore.framework */,
-				CECF3FC72E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension */,
+				33CC10ED2044A3C60003C045 /* Substore Assistant.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,28 +185,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CEBE65DD2A22EAE1004691A4 /* clashmiService */ = {
-			isa = PBXGroup;
-			children = (
-				CEBE65DE2A22EAE1004691A4 /* PacketTunnelProvider.swift */,
-				CEBE65E02A22EAE1004691A4 /* Info.plist */,
-				CE8B929F2A5C07360071C495 /* clashmiService.entitlements */,
-			);
-			path = clashmiService;
-			sourceTree = "<group>";
-		};
-		CEEC19F92B142FA90076CA70 /* LibVpnCore */ = {
-			isa = PBXGroup;
-			children = (
-				CEEC1A152B1430910076CA70 /* Extension+RunBlocking.swift */,
-				CEEC1A132B1430910076CA70 /* ExtensionPlatformInterface.swift */,
-				CEEC1A162B1430910076CA70 /* ExtensionProvider.swift */,
-				CEEC1A142B1430910076CA70 /* LibVpnCore.swift */,
-			);
-			name = LibVpnCore;
-			path = ../bind/apple/LibVpnCore;
-			sourceTree = "<group>";
-		};
 		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,16 +199,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		CEEC19F32B142FA90076CA70 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		33CC10EC2044A3C60003C045 /* Runner */ = {
@@ -343,52 +219,11 @@
 			);
 			dependencies = (
 				33CC11202044C79F0003C045 /* PBXTargetDependency */,
-				CECF3FD12E24E9AF0029BC7E /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
-			productReference = 33CC10ED2044A3C60003C045 /* Clash Mi.app */;
+			productReference = 33CC10ED2044A3C60003C045 /* Substore Assistant.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CECF3FC62E24E9AF0029BC7E /* clashmiServiceSE */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CECF3FD82E24E9AF0029BC7E /* Build configuration list for PBXNativeTarget "clashmiServiceSE" */;
-			buildPhases = (
-				CECF3FC32E24E9AF0029BC7E /* Sources */,
-				CECF3FC42E24E9AF0029BC7E /* Frameworks */,
-				CECF3FC52E24E9AF0029BC7E /* Resources */,
-				CE6C8ACC2E26585100B6ACEA /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE6C8ACB2E26585000B6ACEA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CECF3FC92E24E9AF0029BC7E /* clashmiServiceSE */,
-			);
-			name = clashmiServiceSE;
-			productName = clashmiServiceSE;
-			productReference = CECF3FC72E24E9AF0029BC7E /* com.nebula.clashmi.clashmiServiceSE.systemextension */;
-			productType = "com.apple.product-type.system-extension";
-		};
-		CEEC19F72B142FA90076CA70 /* LibVpnCore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEEC1A002B142FAA0076CA70 /* Build configuration list for PBXNativeTarget "LibVpnCore" */;
-			buildPhases = (
-				CEEC19F32B142FA90076CA70 /* Headers */,
-				CEEC19F42B142FA90076CA70 /* Sources */,
-				CEEC19F52B142FA90076CA70 /* Frameworks */,
-				CEEC19F62B142FA90076CA70 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LibVpnCore;
-			productName = LibVpnCore;
-			productReference = CEEC19F82B142FA90076CA70 /* LibVpnCore.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -413,13 +248,6 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
 					};
-					CECF3FC62E24E9AF0029BC7E = {
-						CreatedOnToolsVersion = 16.2;
-					};
-					CEEC19F72B142FA90076CA70 = {
-						CreatedOnToolsVersion = 15.0.1;
-						LastSwiftMigration = 1500;
-					};
 				};
 			};
 			buildConfigurationList = 33CC10E82044A3C60003C045 /* Build configuration list for PBXProject "Runner" */;
@@ -437,8 +265,6 @@
 			targets = (
 				33CC10EC2044A3C60003C045 /* Runner */,
 				33CC111A2044C6BA0003C045 /* Flutter Assemble */,
-				CEEC19F72B142FA90076CA70 /* LibVpnCore */,
-				CECF3FC62E24E9AF0029BC7E /* clashmiServiceSE */,
 			);
 		};
 /* End PBXProject section */
@@ -450,20 +276,6 @@
 			files = (
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CECF3FC52E24E9AF0029BC7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEEC19F62B142FA90076CA70 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,13 +350,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -564,24 +372,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CECF3FC32E24E9AF0029BC7E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEEC19F42B142FA90076CA70 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEEC1A172B1430910076CA70 /* ExtensionPlatformInterface.swift in Sources */,
-				CEEC1A182B1430910076CA70 /* LibVpnCore.swift in Sources */,
-				CEEC1A1A2B1430910076CA70 /* ExtensionProvider.swift in Sources */,
-				CEEC1A192B1430910076CA70 /* Extension+RunBlocking.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -589,16 +379,6 @@
 			isa = PBXTargetDependency;
 			target = 33CC111A2044C6BA0003C045 /* Flutter Assemble */;
 			targetProxy = 33CC111F2044C79F0003C045 /* PBXContainerItemProxy */;
-		};
-		CE6C8ACB2E26585000B6ACEA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEEC19F72B142FA90076CA70 /* LibVpnCore */;
-			targetProxy = CE6C8ACA2E26585000B6ACEA /* PBXContainerItemProxy */;
-		};
-		CECF3FD12E24E9AF0029BC7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CECF3FC62E24E9AF0029BC7E /* clashmiServiceSE */;
-			targetProxy = CECF3FD02E24E9AF0029BC7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -676,7 +456,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Clash Mi";
+				INFOPLIST_KEY_CFBundleDisplayName = "Substore Assistant";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,10 +465,10 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = "$(FLUTTER_BUILD_NAME)";
-				MY_BUNDLE_DISPLAY_NAME = "Clash Mi";
+				MY_BUNDLE_DISPLAY_NAME = "Substore Assistant";
 				PRODUCT_NAME = "${MY_BUNDLE_DISPLAY_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmi-devid";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-substoreAssistant-devid";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Profile;
@@ -815,7 +595,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Clash Mi";
+				INFOPLIST_KEY_CFBundleDisplayName = "Substore Assistant";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,10 +604,10 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = "$(FLUTTER_BUILD_NAME)";
-				MY_BUNDLE_DISPLAY_NAME = "Clash Mi";
+				MY_BUNDLE_DISPLAY_NAME = "Substore Assistant";
 				PRODUCT_NAME = "${MY_BUNDLE_DISPLAY_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmi-devid";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-substoreAssistant-devid";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -858,10 +638,10 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = "$(FLUTTER_BUILD_NAME)";
-				MY_BUNDLE_DISPLAY_NAME = "Clash Mi";
+				MY_BUNDLE_DISPLAY_NAME = "Substore Assistant";
 				PRODUCT_NAME = "${MY_BUNDLE_DISPLAY_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmi-devid";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-substoreAssistant-devid";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -881,334 +661,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
-		};
-		CECF3FD42E24E9AF0029BC7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = clashmiServiceSE/clashmiServiceSE.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 190;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = clashmiServiceSE/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = clashmiServiceSE;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0.15;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_MODULE_VERIFIER_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.clashmi.clashmiServiceSE;
-				PRODUCT_NAME = "$(inherited)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmiservicese";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		CECF3FD52E24E9AF0029BC7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = clashmiServiceSE/clashmiServiceSE.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 190;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = clashmiServiceSE/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = clashmiServiceSE;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0.15;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_MODULE_VERIFIER_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.clashmi.clashmiServiceSE;
-				PRODUCT_NAME = "$(inherited)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmiservicese";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		CECF3FD62E24E9AF0029BC7E /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = clashmiServiceSE/clashmiServiceSE.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 190;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = TNPM9PFX3W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = clashmiServiceSE/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = clashmiServiceSE;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0.15;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_MODULE_VERIFIER_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.clashmi.clashmiServiceSE;
-				PRODUCT_NAME = "$(inherited)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macos-dev-clashmiservicese";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Profile;
-		};
-		CEEC1A012B142FAA0076CA70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = TNPM9PFX3W;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.LibVpnCore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CEEC1A022B142FAA0076CA70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = TNPM9PFX3W;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.LibVpnCore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CEEC1A032B142FAA0076CA70 /* Profile */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = TNPM9PFX3W;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nebula.LibVpnCore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Profile;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1239,26 +691,6 @@
 				33CC111C2044C6BA0003C045 /* Debug */,
 				33CC111D2044C6BA0003C045 /* Release */,
 				338D0CEB231458BD00FA5F75 /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CECF3FD82E24E9AF0029BC7E /* Build configuration list for PBXNativeTarget "clashmiServiceSE" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CECF3FD42E24E9AF0029BC7E /* Debug */,
-				CECF3FD52E24E9AF0029BC7E /* Release */,
-				CECF3FD62E24E9AF0029BC7E /* Profile */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEEC1A002B142FAA0076CA70 /* Build configuration list for PBXNativeTarget "LibVpnCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEEC1A012B142FAA0076CA70 /* Debug */,
-				CEEC1A022B142FAA0076CA70 /* Release */,
-				CEEC1A032B142FAA0076CA70 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

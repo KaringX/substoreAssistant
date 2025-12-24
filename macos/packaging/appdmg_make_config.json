@@ -1,5 +1,5 @@
 {
-  "title": "substoreAssistant",
+  "title": "Substore Assistant",
   "contents": [
     {
       "x": 448,
@@ -11,7 +11,7 @@
       "x": 192,
       "y": 200,
       "type": "file",
-      "path": "../../dist/macos/Clash Mi.app"
+      "path": "../../dist/macos/Substore Assistant.app"
     }
   ]
 }
