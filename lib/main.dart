@@ -317,7 +317,12 @@ class MyAppState extends State<MyApp>
     Biz.onRequestExit = (() {
       _quit();
     });
-
+    Biz.onEventSubStoreChanged = ((bool connected) {
+      if (_trayGrey == !connected) {
+        return;
+      }
+      _setTray(!connected, false, false);
+    });
     if (startFailedReason == null) {
       Biz.onEventInitHomeFinish.add(() {
         firstShowWindow(false);

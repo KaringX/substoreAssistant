@@ -11,7 +11,7 @@ class Biz {
   static bool _initHomeFinish = false;
   static void Function()? onEventExit;
   static void Function()? onRequestExit;
-
+  static void Function(bool)? onEventSubStoreChanged;
   static Future<void> init() async {
     for (var callback in onEventInitFinish) {
       callback();
@@ -56,5 +56,11 @@ class Biz {
         onRequestExit!();
       }
     });
+  }
+
+  static void subStoreStateChanged(bool isConnected) {
+    if (onEventSubStoreChanged != null) {
+      onEventSubStoreChanged!(isConnected);
+    }
   }
 }

@@ -125,9 +125,10 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
           if (_process != null && !_starting) ...[
             ListTile(
               title: Text("SubStore"),
-              leading: Icon(
-                Icons.help,
-                size: 20,
+              leading: Image.asset(
+                "assets/images/app_icon_128.png",
+                width: 20,
+                height: 20,
               ),
               trailing: Icon(
                 Icons.keyboard_arrow_right,
@@ -180,6 +181,7 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
     _process?.kill();
     _process = null;
     setState(() {});
+    Biz.subStoreStateChanged(false);
   }
 
   Future<int?> getServiceProcessPid() async {
@@ -262,6 +264,7 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
       }
       _starting = false;
       setState(() {});
+      Biz.subStoreStateChanged(false);
       return false;
     }
 
@@ -303,6 +306,7 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
         _starting = false;
         _process = null;
         setState(() {});
+        Biz.subStoreStateChanged(false);
       });
     } catch (err) {
       errMessage = err.toString();
@@ -313,17 +317,20 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
     _starting = false;
     setState(() {});
     if (errMessage.isNotEmpty) {
+      Biz.subStoreStateChanged(false);
       if (mounted) {
         DialogUtils.showAlertDialog(context, errMessage);
         return false;
       }
     }
     if (outMessage.isNotEmpty && outMessage.contains("Error")) {
+      Biz.subStoreStateChanged(false);
       if (mounted) {
         DialogUtils.showAlertDialog(context, outMessage);
         return false;
       }
     }
+    Biz.subStoreStateChanged(true);
     return true;
   }
 

@@ -148,29 +148,11 @@ class TranslationsMetaEn {
 	/// en: 'Seconds'
 	String get seconds => 'Seconds';
 
-	/// en: 'Connect'
-	String get connect => 'Connect';
+	/// en: 'Started'
+	String get connected => 'Started';
 
-	/// en: 'Disconnect'
-	String get disconnect => 'Disconnect';
-
-	/// en: 'Connected'
-	String get connected => 'Connected';
-
-	/// en: 'Disconnected'
-	String get disconnected => 'Disconnected';
-
-	/// en: 'Connecting'
-	String get connecting => 'Connecting';
-
-	/// en: 'Connect Timeout'
-	String get connectTimeout => 'Connect Timeout';
-
-	/// en: 'Timeout'
-	String get timeout => 'Timeout';
-
-	/// en: 'Timeout Duration'
-	String get timeoutDuration => 'Timeout Duration';
+	/// en: 'Stopped'
+	String get disconnected => 'Stopped';
 
 	/// en: 'Language'
 	String get language => 'Language';
@@ -323,14 +305,8 @@ extension on Translations {
 			'meta.hours' => 'Hours',
 			'meta.minutes' => 'Minutes',
 			'meta.seconds' => 'Seconds',
-			'meta.connect' => 'Connect',
-			'meta.disconnect' => 'Disconnect',
-			'meta.connected' => 'Connected',
-			'meta.disconnected' => 'Disconnected',
-			'meta.connecting' => 'Connecting',
-			'meta.connectTimeout' => 'Connect Timeout',
-			'meta.timeout' => 'Timeout',
-			'meta.timeoutDuration' => 'Timeout Duration',
+			'meta.connected' => 'Started',
+			'meta.disconnected' => 'Stopped',
 			'meta.language' => 'Language',
 			'meta.next' => 'Next',
 			'meta.done' => 'Done',
