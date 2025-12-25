@@ -123,7 +123,6 @@ class _TranslationsMetaAr implements TranslationsMetaEn {
 	@override String get core => 'جوهر';
 	@override String get help => 'يساعد';
 	@override String get tutorial => 'درس تعليمي';
-	@override String get proxy => 'التمثيل';
 	@override String get theme => 'سمة';
 	@override String get autoUpdate => 'التحديثات التلقائية';
 	@override String get updateChannel => 'تحديث القنوات تلقائيا';
@@ -135,6 +134,8 @@ class _TranslationsMetaAr implements TranslationsMetaEn {
 	@override String get share => 'يشارك';
 	@override String get server => 'الخادم';
 	@override String get port => 'ميناء';
+	@override String get frontendPort => 'منفذ الواجهة الأمامية';
+	@override String get backendPort => 'منفذ الواجهة الخلفية';
 	@override String get donate => 'يتبرع';
 	@override String get setting => 'إعدادات';
 	@override String get deviceNoSpace => 'مساحة غير كافيه في القرص';
@@ -210,7 +211,6 @@ extension on TranslationsAr {
 			'meta.core' => 'جوهر',
 			'meta.help' => 'يساعد',
 			'meta.tutorial' => 'درس تعليمي',
-			'meta.proxy' => 'التمثيل',
 			'meta.theme' => 'سمة',
 			'meta.autoUpdate' => 'التحديثات التلقائية',
 			'meta.updateChannel' => 'تحديث القنوات تلقائيا',
@@ -222,6 +222,8 @@ extension on TranslationsAr {
 			'meta.share' => 'يشارك',
 			'meta.server' => 'الخادم',
 			'meta.port' => 'ميناء',
+			'meta.frontendPort' => 'منفذ الواجهة الأمامية',
+			'meta.backendPort' => 'منفذ الواجهة الخلفية',
 			'meta.donate' => 'يتبرع',
 			'meta.setting' => 'إعدادات',
 			'meta.deviceNoSpace' => 'مساحة غير كافيه في القرص',

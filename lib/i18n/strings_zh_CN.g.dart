@@ -123,7 +123,6 @@ class _TranslationsMetaZhCn implements TranslationsMetaEn {
 	@override String get core => '核心';
 	@override String get help => '帮助';
 	@override String get tutorial => '使用教程';
-	@override String get proxy => '代理';
 	@override String get theme => '主题';
 	@override String get autoUpdate => '自动更新';
 	@override String get updateChannel => '自动更新通道';
@@ -135,6 +134,8 @@ class _TranslationsMetaZhCn implements TranslationsMetaEn {
 	@override String get share => '分享';
 	@override String get server => '服务器';
 	@override String get port => '端口';
+	@override String get frontendPort => '前端端口';
+	@override String get backendPort => '后台端口';
 	@override String get donate => '捐助';
 	@override String get setting => '设置';
 	@override String get deviceNoSpace => '磁盘空间不足';
@@ -210,7 +211,6 @@ extension on TranslationsZhCn {
 			'meta.core' => '核心',
 			'meta.help' => '帮助',
 			'meta.tutorial' => '使用教程',
-			'meta.proxy' => '代理',
 			'meta.theme' => '主题',
 			'meta.autoUpdate' => '自动更新',
 			'meta.updateChannel' => '自动更新通道',
@@ -222,6 +222,8 @@ extension on TranslationsZhCn {
 			'meta.share' => '分享',
 			'meta.server' => '服务器',
 			'meta.port' => '端口',
+			'meta.frontendPort' => '前端端口',
+			'meta.backendPort' => '后台端口',
 			'meta.donate' => '捐助',
 			'meta.setting' => '设置',
 			'meta.deviceNoSpace' => '磁盘空间不足',

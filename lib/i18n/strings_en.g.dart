@@ -223,9 +223,6 @@ class TranslationsMetaEn {
 	/// en: 'Tutorial'
 	String get tutorial => 'Tutorial';
 
-	/// en: 'Proxy'
-	String get proxy => 'Proxy';
-
 	/// en: 'Theme'
 	String get theme => 'Theme';
 
@@ -258,6 +255,12 @@ class TranslationsMetaEn {
 
 	/// en: 'Port'
 	String get port => 'Port';
+
+	/// en: 'Frontend Port'
+	String get frontendPort => 'Frontend Port';
+
+	/// en: 'Backend port'
+	String get backendPort => 'Backend port';
 
 	/// en: 'Donate'
 	String get donate => 'Donate';
@@ -345,7 +348,6 @@ extension on Translations {
 			'meta.core' => 'Core',
 			'meta.help' => 'Help',
 			'meta.tutorial' => 'Tutorial',
-			'meta.proxy' => 'Proxy',
 			'meta.theme' => 'Theme',
 			'meta.autoUpdate' => 'Auto Update',
 			'meta.updateChannel' => 'Auto Update Channel',
@@ -357,6 +359,8 @@ extension on Translations {
 			'meta.share' => 'Share',
 			'meta.server' => 'Server',
 			'meta.port' => 'Port',
+			'meta.frontendPort' => 'Frontend Port',
+			'meta.backendPort' => 'Backend port',
 			'meta.donate' => 'Donate',
 			'meta.setting' => 'Settings',
 			'meta.deviceNoSpace' => 'Not enough disk space',

@@ -123,7 +123,6 @@ class _TranslationsMetaRu implements TranslationsMetaEn {
 	@override String get core => 'Ядро';
 	@override String get help => 'Помощь';
 	@override String get tutorial => 'Руководство';
-	@override String get proxy => 'Прокси';
 	@override String get theme => 'Тема';
 	@override String get autoUpdate => 'Автоматические обновления';
 	@override String get updateChannel => 'Канал автоматического обновления';
@@ -135,6 +134,8 @@ class _TranslationsMetaRu implements TranslationsMetaEn {
 	@override String get share => 'Поделиться';
 	@override String get server => 'Сервер';
 	@override String get port => 'Порт';
+	@override String get frontendPort => 'Передний порт';
+	@override String get backendPort => 'порт бэкэнда';
 	@override String get donate => 'Пожертвовать';
 	@override String get setting => 'Настройки';
 	@override String get deviceNoSpace => 'Недостаточно места на диске';
@@ -210,7 +211,6 @@ extension on TranslationsRu {
 			'meta.core' => 'Ядро',
 			'meta.help' => 'Помощь',
 			'meta.tutorial' => 'Руководство',
-			'meta.proxy' => 'Прокси',
 			'meta.theme' => 'Тема',
 			'meta.autoUpdate' => 'Автоматические обновления',
 			'meta.updateChannel' => 'Канал автоматического обновления',
@@ -222,6 +222,8 @@ extension on TranslationsRu {
 			'meta.share' => 'Поделиться',
 			'meta.server' => 'Сервер',
 			'meta.port' => 'Порт',
+			'meta.frontendPort' => 'Передний порт',
+			'meta.backendPort' => 'порт бэкэнда',
 			'meta.donate' => 'Пожертвовать',
 			'meta.setting' => 'Настройки',
 			'meta.deviceNoSpace' => 'Недостаточно места на диске',

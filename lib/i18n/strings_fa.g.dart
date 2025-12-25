@@ -123,7 +123,6 @@ class _TranslationsMetaFa implements TranslationsMetaEn {
 	@override String get core => 'هسته';
 	@override String get help => 'کمک کند';
 	@override String get tutorial => 'آموزش';
-	@override String get proxy => 'بازیگری';
 	@override String get theme => 'موضوع';
 	@override String get autoUpdate => 'به روز رسانی خودکار';
 	@override String get updateChannel => 'کانال به‌روزرسانی خودکار';
@@ -135,6 +134,8 @@ class _TranslationsMetaFa implements TranslationsMetaEn {
 	@override String get share => 'اشتراک گذاری';
 	@override String get server => 'سرور';
 	@override String get port => 'بندر';
+	@override String get frontendPort => 'پورت جلویی';
+	@override String get backendPort => 'پورت بک‌اند';
 	@override String get donate => 'اهدا کنید';
 	@override String get setting => 'تنظیمات';
 	@override String get deviceNoSpace => 'فضای خالی کافی ندارید';
@@ -210,7 +211,6 @@ extension on TranslationsFa {
 			'meta.core' => 'هسته',
 			'meta.help' => 'کمک کند',
 			'meta.tutorial' => 'آموزش',
-			'meta.proxy' => 'بازیگری',
 			'meta.theme' => 'موضوع',
 			'meta.autoUpdate' => 'به روز رسانی خودکار',
 			'meta.updateChannel' => 'کانال به‌روزرسانی خودکار',
@@ -222,6 +222,8 @@ extension on TranslationsFa {
 			'meta.share' => 'اشتراک گذاری',
 			'meta.server' => 'سرور',
 			'meta.port' => 'بندر',
+			'meta.frontendPort' => 'پورت جلویی',
+			'meta.backendPort' => 'پورت بک‌اند',
 			'meta.donate' => 'اهدا کنید',
 			'meta.setting' => 'تنظیمات',
 			'meta.deviceNoSpace' => 'فضای خالی کافی ندارید',

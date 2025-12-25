@@ -102,9 +102,9 @@ class GroupHelper {
       List<GroupItemOptions> options1 = [
         GroupItemOptions(
             textFormFieldOptions: GroupItemTextFieldOptions(
-                name: "Front End Port",
+                name: "SubStore ${tcontext.meta.frontendPort}",
                 text: setting.frontendPort.toString(),
-                textWidthPercent: 0.6,
+                textWidthPercent: 0.3,
                 hint: tcontext.meta.required,
                 onChanged: (String value) {
                   setting.frontendPort =
@@ -112,9 +112,9 @@ class GroupHelper {
                 })),
         GroupItemOptions(
             textFormFieldOptions: GroupItemTextFieldOptions(
-                name: "Back End Port",
+                name: "SubStore ${tcontext.meta.backendPort}",
                 text: setting.backendPort.toString(),
-                textWidthPercent: 0.6,
+                textWidthPercent: 0.3,
                 hint: tcontext.meta.required,
                 onChanged: (String value) {
                   setting.backendPort =

@@ -13,7 +13,7 @@ abstract final class AppUtils {
   }
 
   static String getName() {
-    return "substore Assistant";
+    return "Substore Assistant";
   }
 
   static String getReleaseVersion() {
