@@ -7,3 +7,5 @@ A SubStore GUI client based on <a href="https://github.com/flutter/flutter">flut
 </h3>
 
 </h1>
+
+## [Telegram](https://t.me/SubstoreAssistant)
