@@ -408,7 +408,7 @@ class HomeScreenWidgetPart2 extends StatelessWidget {
     }*/
 
     widgets.addAll([
-      ListTile(
+      /*ListTile(
         title: Text(tcontext.meta.help),
         leading: Icon(
           Icons.help,
@@ -421,6 +421,22 @@ class HomeScreenWidgetPart2 extends StatelessWidget {
         minVerticalPadding: 22,
         onTap: () async {
           await GroupHelper.showHelp(context);
+        },
+      ),*/
+      ListTile(
+        title: Text(tcontext.meta.download),
+        leading: Icon(
+          Icons.download,
+          size: 20,
+        ),
+        trailing: Icon(
+          Icons.keyboard_arrow_right,
+          size: 20,
+        ),
+        minVerticalPadding: 22,
+        onTap: () async {
+          await UrlLauncherUtils.loadUrl(
+              "https://github.com/KaringX/substoreAssistant/releases");
         },
       ),
       ListTile(

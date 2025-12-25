@@ -5,6 +5,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:substore_assistant/app/modules/setting_manager.dart';
+import 'package:substore_assistant/app/utils/url_launcher_utils.dart';
 import 'package:substore_assistant/i18n/strings.g.dart';
 import 'package:substore_assistant/screens/group_item_creator.dart';
 import 'package:substore_assistant/screens/group_item_options.dart';
@@ -36,9 +37,8 @@ class GroupHelper {
             pushOptions: GroupItemPushOptions(
                 name: tcontext.meta.download,
                 onPush: () async {
-                  //todo
-                  //var remoteConfig = RemoteConfigManager.getConfig();
-                  //await UrlLauncherUtils.loadUrl(remoteConfig.download);
+                  await UrlLauncherUtils.loadUrl(
+                      "https://github.com/KaringX/substoreAssistant/releases");
                 })),
       ];
 
