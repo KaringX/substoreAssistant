@@ -144,7 +144,6 @@ if(NOT CMAKE_BUILD_TYPE MATCHES "Debug")
     COMPONENT Runtime)
 endif()
 
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../bind/linux/core/"
-  USE_SOURCE_PERMISSIONS 
+install(PROGRAMS "${CMAKE_CURRENT_SOURCE_DIR}/../bind/linux/core/substoreAssistantService"
   DESTINATION "${BUILD_BUNDLE_DIR}" 
   COMPONENT Runtime)
