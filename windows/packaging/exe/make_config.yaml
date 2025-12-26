@@ -1,5 +1,5 @@
 script_template: inno_setup.iss
-app_id: 74F1C307-2E21-4951-BB25-763C3A2AE9EF
+app_id: 64F1C307-5E21-4951-BB25-763C3A2AE99F
 app_name: Substore Assistant
 display_name: Substore Assistant
 executable_name: substoreAssistant.exe
