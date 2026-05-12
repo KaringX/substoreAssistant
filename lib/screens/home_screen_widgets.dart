@@ -70,58 +70,65 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(children: [
-                Container(
+              Row(
+                children: [
+                  Container(
                     width: 8,
                     height: 8,
                     decoration: BoxDecoration(
                       color: connected ? Colors.green : Colors.grey,
                       shape: BoxShape.circle,
-                    )),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  connected
-                      ? tcontext.meta.connected
-                      : tcontext.meta.disconnected,
-                  textAlign: TextAlign.left,
-                ),
-              ]),
-              Stack(children: [
-                SizedBox(
-                  width: 60,
-                  child: FittedBox(
-                    fit: BoxFit.fill,
-                    child: Switch.adaptive(
-                      value: connected,
-                      onChanged: (bool value) async {
-                        if (value) {
-                          await start("switch");
-                        } else {
-                          await stop();
-                        }
-                      },
                     ),
                   ),
-                ),
-                Positioned(
+                  SizedBox(width: 10),
+                  Text(
+                    connected
+                        ? tcontext.meta.connected
+                        : tcontext.meta.disconnected,
+                    textAlign: TextAlign.left,
+                  ),
+                ],
+              ),
+              Stack(
+                children: [
+                  SizedBox(
+                    width: 60,
+                    child: FittedBox(
+                      fit: BoxFit.fill,
+                      child: Switch.adaptive(
+                        value: connected,
+                        activeThumbColor: Colors.white,
+                        activeTrackColor: ThemeDefine.kColorGreenBright,
+                        onChanged: (bool value) async {
+                          if (value) {
+                            await start("switch");
+                          } else {
+                            await stop();
+                          }
+                        },
+                      ),
+                    ),
+                  ),
+                  Positioned(
                     left: 8,
                     top: 12,
                     child: SizedBox(
-                        width: 25,
-                        height: 25,
-                        child: _starting
-                            ? const RepaintBoundary(
-                                child: CircularProgressIndicator(
-                                    color: ThemeDefine.kColorGreenBright))
-                            : null)),
-              ]),
+                      width: 25,
+                      height: 25,
+                      child: _starting
+                          ? const RepaintBoundary(
+                              child: CircularProgressIndicator(
+                                color: ThemeDefine.kColorGreenBright,
+                              ),
+                            )
+                          : null,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
-          SizedBox(
-            height: connected ? 10 : 0,
-          ),
+          SizedBox(height: connected ? 10 : 0),
           if (_process != null && !_starting) ...[
             ListTile(
               title: Text("SubStore"),
@@ -130,42 +137,38 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
                 width: 20,
                 height: 20,
               ),
-              trailing: Icon(
-                Icons.keyboard_arrow_right,
-                size: 20,
-              ),
+              trailing: Icon(Icons.keyboard_arrow_right, size: 20),
               minVerticalPadding: 22,
               onTap: () async {
                 final settings = SettingManager.getConfig();
                 final api = "http://127.0.0.1:${settings.backendPort}";
 
                 UrlLauncherUtils.loadUrl(
-                    "http://127.0.0.1:${settings.frontendPort}?api=${Uri.encodeComponent(api)}");
+                  "http://127.0.0.1:${settings.frontendPort}?api=${Uri.encodeComponent(api)}",
+                );
               },
             ),
-          ]
+          ],
         ],
       ),
     ];
 
     return Card(
-        child: Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-      child: ListView.separated(
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        itemBuilder: (_, index) {
-          return widgets[index];
-        },
-        separatorBuilder: (BuildContext context, int index) {
-          return const Divider(
-            height: 1,
-            thickness: 0.3,
-          );
-        },
-        itemCount: widgets.length,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+        child: ListView.separated(
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemBuilder: (_, index) {
+            return widgets[index];
+          },
+          separatorBuilder: (BuildContext context, int index) {
+            return const Divider(height: 1, thickness: 0.3);
+          },
+          itemCount: widgets.length,
+        ),
       ),
-    ));
+    );
   }
 
   Future<void> _onInitAllFinish() async {
@@ -192,8 +195,9 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
       result = await Process.run('tasklist', ['/svc']); // /v 显示详细信息
     } else {
       // Linux/macOS
-      result =
-          await Process.run('ps', ['-ef | grep ${PathUtils.serviceExeName()}']);
+      result = await Process.run('ps', [
+        '-ef | grep ${PathUtils.serviceExeName()}',
+      ]);
     }
 
     if (result.exitCode != 0) {
@@ -207,7 +211,8 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
     if (Platform.isWindows) {
       for (int i = 0; i < lines.length; ++i) {
         if (lines[i].startsWith(
-            path.basenameWithoutExtension(PathUtils.serviceExeName()))) {
+          path.basenameWithoutExtension(PathUtils.serviceExeName()),
+        )) {
           final parts = lines[i].split(" ");
           for (int j = 1; j < parts.length; ++j) {
             if (parts[j] == " ") {
@@ -340,7 +345,8 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
       if (ok) {
         if (background) {
           MoveToBackgroundUtils.moveToBackground(
-              duration: const Duration(milliseconds: 300));
+            duration: const Duration(milliseconds: 300),
+          );
         }
       }
     });
@@ -352,7 +358,8 @@ class _HomeScreenWidgetPart1 extends State<HomeScreenWidgetPart1> {
 
       if (background) {
         MoveToBackgroundUtils.moveToBackground(
-            duration: const Duration(milliseconds: 300));
+          duration: const Duration(milliseconds: 300),
+        );
       }
     });
   }
@@ -372,14 +379,8 @@ class HomeScreenWidgetPart2 extends StatelessWidget {
     var widgets = [
       ListTile(
         title: Text(tcontext.meta.setting),
-        leading: Icon(
-          Icons.settings,
-          size: 20,
-        ),
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          size: 20,
-        ),
+        leading: Icon(Icons.settings, size: 20),
+        trailing: Icon(Icons.keyboard_arrow_right, size: 20),
         minVerticalPadding: 22,
         onTap: () async {
           await GroupHelper.showAppSettings(context);
@@ -425,58 +426,47 @@ class HomeScreenWidgetPart2 extends StatelessWidget {
       ),*/
       ListTile(
         title: Text(tcontext.meta.download),
-        leading: Icon(
-          Icons.download,
-          size: 20,
-        ),
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          size: 20,
-        ),
+        leading: Icon(Icons.download, size: 20),
+        trailing: Icon(Icons.keyboard_arrow_right, size: 20),
         minVerticalPadding: 22,
         onTap: () async {
           await UrlLauncherUtils.loadUrl(
-              "https://github.com/KaringX/substoreAssistant/releases");
+            "https://github.com/KaringX/substoreAssistant/releases",
+          );
         },
       ),
       ListTile(
         title: Text(tcontext.meta.about),
-        leading: Icon(
-          Icons.info,
-          size: 20,
-        ),
-        trailing: Icon(
-          Icons.keyboard_arrow_right,
-          size: 20,
-        ),
+        leading: Icon(Icons.info, size: 20),
+        trailing: Icon(Icons.keyboard_arrow_right, size: 20),
         minVerticalPadding: 22,
         onTap: () async {
           await Navigator.push(
-              context,
-              MaterialPageRoute(
-                  settings: AboutScreen.routSettings(),
-                  builder: (context) => AboutScreen()));
+            context,
+            MaterialPageRoute(
+              settings: AboutScreen.routSettings(),
+              builder: (context) => AboutScreen(),
+            ),
+          );
         },
-      )
+      ),
     ]);
 
     return Card(
-        child: Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-      child: ListView.separated(
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        itemBuilder: (_, index) {
-          return widgets[index];
-        },
-        separatorBuilder: (BuildContext context, int index) {
-          return const Divider(
-            height: 1,
-            thickness: 0.3,
-          );
-        },
-        itemCount: widgets.length,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+        child: ListView.separated(
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemBuilder: (_, index) {
+            return widgets[index];
+          },
+          separatorBuilder: (BuildContext context, int index) {
+            return const Divider(height: 1, thickness: 0.3);
+          },
+          itemCount: widgets.length,
+        ),
       ),
-    ));
+    );
   }
 }
